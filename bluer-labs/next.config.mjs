@@ -1,4 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
 
-export default nextConfig;
+  experimental: {
+    optimizeFonts: true,
+  },
+    googleFonts: {
+      fonts: [
+        {
+          family: 'Anonymous Pro',
+          weights: ['400', '700'],
+        },
+
+      ],
+      display: 'swap',
+    },
+  };
+  
+  export default nextConfig;
+  
