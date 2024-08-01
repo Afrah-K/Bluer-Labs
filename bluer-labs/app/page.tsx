@@ -32,7 +32,7 @@ export default function Home() {
           </span>
           <br />
           <span>
-            Hi, I'm Afrah, an AI engineer who works on that <strong>software</strong>.
+            Hi, I&apos;m Afrah, an AI engineer who works on that <strong>software</strong>.
           </span>
           <br />
           <span>
@@ -40,16 +40,16 @@ export default function Home() {
           </span>
           <br />
           <span>
-            <strong>That's all I do.</strong>
+            <strong>That&apos;s all I do.</strong>
           </span>
         </p>
         <br />
         <div>
-          <p>If that's something you find interesting, drop your mail:</p>
+          <p>If that&apos;s something you find interesting, drop your mail:</p>
           <EmailForm />
           <br />
           <span>
-            I'll reach out to you. Or book a call <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ30LkwlTQDDIHy3dUn5d5hKdDGq4W8k90bH2fUtqfUlFabu8zTZKUud9doO5oXBRTvmGEyjoDr2?gv=true%27" className="font-bold underline">here</Link>.
+            I&apos;ll reach out to you. Or book a call <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ30LkwlTQDDIHy3dUn5d5hKdDGq4W8k90bH2fUtqfUlFabu8zTZKUud9doO5oXBRTvmGEyjoDr2?gv=true%27" className="font-bold underline">here</Link>.
           </span>
         </div>
       </div>
@@ -57,7 +57,6 @@ export default function Home() {
         <div className="p-2">
           <CardWithScroll />
         </div>
-    
       </div>
     </div>
   );
