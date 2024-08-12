@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen lg:flex-row lg:overflow-hidden">
       <div className="flex-1 p-7 overflow-y-auto">
+        
         <h1 className="text-left">
           <strong>I build AI software.</strong>
         </h1>
@@ -49,11 +50,12 @@ export default function Home() {
           <EmailForm />
           <br />
           <span>
-            I&apos;ll reach out to you. Or book a call <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ30LkwlTQDDIHy3dUn5d5hKdDGq4W8k90bH2fUtqfUlFabu8zTZKUud9doO5oXBRTvmGEyjoDr2?gv=true%27" className="font-bold underline">here</Link>.
+            I&apos;ll reach out to you. Or book a call <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ30LkwlTQDDIHy3dUn5d5hKdDGq4W8k90bH2fUtqfUlFabu8zTZKUud9doO5oXBRTvmGEyjoDr2?gv=true%27" className="font-bold underline text-[#0033FF]">here</Link>.
           </span>
           
           {/* Mobile-only block */}
           <div className="lg:hidden mt-4">
+            
             <h2 className="text-lg font-bold">Software I build</h2>
             <CardWithScroll />
           </div>

@@ -13,7 +13,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="Anonymous_Pro">{children}</body>
+      <body className="Anonymous_Pro relative overflow-hidden">
+        {/* Background balls */}
+        <div className="background-balls">
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+         
+        </div>
+        {/* Wrap children in a div with class content */}
+        <div className="content">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
