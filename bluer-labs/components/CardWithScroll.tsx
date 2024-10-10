@@ -16,7 +16,7 @@ const CardWithScroll: React.FC = () => {
     <div className="flex flex-wrap">
       {cards.map((card, index) => (
         <div key={index} className="w-full lg:w-1/2 p-2">
-          <Card className="flex flex-col lg:flex-row h-48">
+          <Card className="flex flex-col lg:flex-row h-48 border border-white bg-transparent"> {/* White outline and no fill */}
             <div className="flex-2 p-4">
               <CardTitle>{card.title}</CardTitle>
               <CardDescription>{card.description}</CardDescription>

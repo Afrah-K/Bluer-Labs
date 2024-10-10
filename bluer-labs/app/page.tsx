@@ -2,14 +2,16 @@
 import Link from 'next/link';
 import EmailForm from '@/components/EmailForm';
 import { CardWithScroll } from "@/components/CardWithScroll";
+import { FaLinkedin } from 'react-icons/fa'; // LinkedIn icon
+
 
 export default function Home() {
   return (
     <div className="flex flex-col h-screen lg:flex-row lg:overflow-hidden">
       <div className="flex-1 p-7 overflow-y-auto">
         
-        <h1 className="text-left">
-          <strong>I build AI software.</strong>
+        <h1 text-2xl font-light className="text-left">
+          I build AI software.
         </h1>
         <p>
           <span><strong>Software</strong> for businesses and creators alike.</span>
@@ -50,9 +52,34 @@ export default function Home() {
           <EmailForm />
           <br />
           <span>
-            I&apos;ll reach out to you. Or book a call <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ30LkwlTQDDIHy3dUn5d5hKdDGq4W8k90bH2fUtqfUlFabu8zTZKUud9doO5oXBRTvmGEyjoDr2?gv=true%27" className="font-bold underline text-[#0033FF]">here</Link>.
+            I&apos;ll reach out to you. Or book a call <Link href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ30LkwlTQDDIHy3dUn5d5hKdDGq4W8k90bH2fUtqfUlFabu8zTZKUud9doO5oXBRTvmGEyjoDr2?gv=true%27" className="font-bold underline">here</Link>.
           </span>
-          
+
+          <div className="flex space-x-6 mt-4">
+            <a 
+              href="https://www.linkedin.com/in/afrah-kausar-a5213b177/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-grey-600 hover:text-blue-800 font-medium flex items-center space-x-2"
+            >
+              <FaLinkedin className="w-5 h-5 text-grey-600" />
+              <span>Stalk my LinkedIn</span>
+            </a>
+      
+            <a 
+              href="/case-studies" 
+              className="text-grey-600 hover:text-blue-800 font-medium"
+            >
+              <span>Case Studies</span>
+            </a>
+            <a 
+              href="" 
+              className="text-grey-600 hover:text-blue-800 font-medium"
+            >
+              <span>Personal Website</span>
+            </a>
+          </div>
+   
           {/* Mobile-only block */}
           <div className="lg:hidden mt-4">
             
