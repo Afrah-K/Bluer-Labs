@@ -29,12 +29,7 @@ const carouselItems = [
     id: 2,
     title: "Theory AI",
     image: "/bluer-labs/assets/theoryai.jpeg?height=300&width=300",
-    description: "The AI component of the TheoryAI GenAI app is designed to leverage advanced natural language processing (NLP) models to generate intelligent and contextually relevant responses. This directory contains the core functionalities that power the AI-driven features of the application, including:
-
-Model Integration: Utilizes both base and fine-tuned models to provide high-quality responses tailored to specific use cases.
-Response Generation: Implements functions to process user inputs, interact with the models, and generate coherent and contextually appropriate replies.
-Data Handling: Manages the input data, including system messages, user prompts, and reference messages, ensuring that the models receive the necessary context for accurate response generation.
-Error Handling: Includes robust error handling mechanisms to manage cases with insufficient data and other potential issues, ensuring a smooth user experience.",
+    description: "",
     link: "https://example.com/beach",
   },
   {
