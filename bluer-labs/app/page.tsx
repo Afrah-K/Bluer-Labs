@@ -73,7 +73,7 @@ export default function Home() {
               <span>Case Studies</span>
             </a>
             <a 
-              href="" 
+              href="https://afrah-kausar.vercel.app/" 
               className="text-grey-600 hover:text-blue-800 font-medium"
             >
               <span>Personal Website</span>
