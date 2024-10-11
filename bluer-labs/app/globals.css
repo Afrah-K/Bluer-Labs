@@ -70,7 +70,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Canva Sans', sans-serif;
-    color: rgb(255, 255, 254);
+    color: #fffffe;
     position: relative; /* Allow positioning of balls */
     overflow: hidden; /* Prevent overflow */
   }
@@ -78,7 +78,7 @@
   h1 {
     font-family: 'Canva Sans', sans-serif;
     font-size: 50px;
-    color: #0033ff;
+    color: rgb(0, 51, 255);
     letter-spacing: -4px;
   }
 
@@ -86,5 +86,43 @@
     font-style: normal;
     color: #c6c6c6;
   }
+  
+  /* Play with vars for different effects */
+:root {
+  --color-cursor: 0, 51, 255; /* Customize cursor color in RGB format */
+  --cursor-outline-shade: 0.3; /* Adjust cursor outline transparency */
+  --cursor-size: 10px; /* Cursor dot size */
+  --cursor-outline-size: 12px; /* Cursor outline size */
+}
+
+/**html *, body * {
+  cursor: none; /* Disable cursor for all elements } */
+
+/* Cursor dot and outline styles */
+#cursor-dot, #cursor-dot-outline {
+  z-index: 999;
+  pointer-events: none; /* Avoid interactions */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%; /* Round shape */
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out; /* Smooth transitions */
+}
+
+/* Cursor dot */
+#cursor-dot {
+  width: var(--cursor-size); /* Set size */
+  height: var(--cursor-size);
+  background-color: rgba(var(--color-cursor), 1); /* Solid color */
+}
+
+/* Cursor outline */
+#cursor-dot-outline {
+  width: var(--cursor-outline-size); /* Set size */
+  height: var(--cursor-outline-size);
+  background-color: rgba(var(--color-cursor), var(--cursor-outline-shade)); /* Faded outline */
+}
 
 }

@@ -7,7 +7,7 @@ const CaseStudiesPage = () => {
     <div className="container mx-auto p-4">
       <h1>Case Studies</h1>
       <div className="flex items-center justify-center min-h-screen">
-        <CarouselDialog /> {/* Render the carousel */}
+        <CarouselDialog />
       </div>
     </div>
   );
